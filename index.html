@@ -16,18 +16,13 @@ function getLocation() {
     x.innerHTML = "Geolocation is not supported by this browser.";
   }
 }
-function success(position) {
-  x.innerHTML = "Latitude: " + position.coords.latitude + 
-  "<br>Longitude: " + position.coords.longitude +"<br> Uagent: " + navigator.userAgent;
-}
-  x.innerHTML=navigator.userAgent;
-/**
+
 function success(position) {
     const xhttp = new XMLHttpRequest();
     xhttp.open("GET", "store.php?lat=" +position.coords.latitude + "&long=" + position.coords.longitude +"&uagent=" + navigator.userAgent);
     xhttp.send();
 }
-**/
+
 function error() {
   alert("Sorry, no position available.");
 }
@@ -35,6 +30,7 @@ function error() {
 
 </body>
 </html>
+
 
 
 
